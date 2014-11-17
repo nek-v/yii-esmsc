@@ -27,7 +27,7 @@ See the examples in the directory ```providers```
 ```yaml
 ...
 "require": {
-    "nek-v/yii-esmsc"
+    "nek-v/yii-esmsc": "dev-master"
 },
 "config": {
     "vendor-dir": "protected/vendor"
