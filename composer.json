@@ -2,7 +2,6 @@
     "name": "nek-v/yii-esmsc",
     "description": "Extension for sending SMS messages",
     "keywords": ["yii", "sms", "smpp", "texting"],
-    "minimum-stability": "stable",
     "authors": [
         {
             "name": "nek",
