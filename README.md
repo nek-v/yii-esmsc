@@ -27,6 +27,7 @@ See the examples in the directory ```providers```
 ```yaml
 ...
 "require": {
+    "php-smpp/php-smpp": "dev-master",
     "nek-v/yii-esmsc": "dev-master"
 },
 "config": {
