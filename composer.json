@@ -13,6 +13,6 @@
     "license": "MIT",
     "require": {
        "php": ">=5.3.3",
-       "php-smpp/php-smpp": "dev-master"
+       "onlinecity/php-smpp": "dev-master"
     }
 }
