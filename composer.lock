@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "f9aa381e98be377a14afea5e8e914117",
+    "packages": [
+        {
+            "name": "php-smpp/php-smpp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onlinecity/php-smpp.git",
+                "reference": "2b62a417ef6dd70b7741d2df9287a596b7e0128c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onlinecity/php-smpp/zipball/2b62a417ef6dd70b7741d2df9287a596b7e0128c",
+                "reference": "2b62a417ef6dd70b7741d2df9287a596b7e0128c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-sockets": "*",
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "gsmencoder.class.php",
+                    "sockettransport.class.php",
+                    "smppclient.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Hans Duedal",
+                    "email": "hd@oc.dk",
+                    "homepage": "http://oc.dk"
+                }
+            ],
+            "description": "PHP-based SMPP client lib",
+            "homepage": "http://github.com/onlinecity/php-smpp",
+            "keywords": [
+                "gsm",
+                "smpp",
+                "sms",
+                "texting"
+            ],
+            "time": "2014-11-13 10:27:38"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "php-smpp/php-smpp": 20
+    },
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.3.3"
+    },
+    "platform-dev": []
+}
