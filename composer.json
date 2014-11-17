@@ -1,0 +1,19 @@
+{
+    "name": "nek-v/yii-esmsc",
+    "description": "Extension for sending SMS messages",
+    "keywords": ["yii", "sms", "smpp", "texting"],
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "nek",
+            "email": "nek@srez.org"
+        }
+    ],
+    "homepage": "https://github.com/nek-v/yii-esmsc",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+       "php": ">=5.3.3",
+       "php-smpp/php-smpp": "dev-master"
+    }
+}
