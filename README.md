@@ -30,7 +30,8 @@ See the examples in the directory ```providers```
 ```yaml
 ...
 "require": {
-    "nek-v/yii-esmsc": "1.0.0"
+    "php-smpp/php-smpp": "dev-master",
+    "nek-v/yii-esmsc": "1.0.2"
 }
 ...
 ```
