@@ -2,6 +2,7 @@ Yii SMS send extension
 =========
 [![Latest Stable Version](https://poser.pugx.org/nek-v/yii-esmsc/v/stable.svg)](https://packagist.org/packages/nek-v/yii-esmsc)
 [![License](https://poser.pugx.org/nek-v/yii-esmsc/license.svg)](https://packagist.org/packages/nek-v/yii-esmsc)
+
 This extension is designed to send sms messages through different services and protocols.
 You can add your providers extending class ```ESMSCProvider```.
 See the examples in the directory ```providers```
