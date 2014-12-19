@@ -1,6 +1,7 @@
 Yii SMS send extension
 =========
-
+[![Latest Stable Version](https://poser.pugx.org/nek-v/yii-esmsc/v/stable.svg)](https://packagist.org/packages/nek-v/yii-esmsc)
+[![License](https://poser.pugx.org/nek-v/yii-esmsc/license.svg)](https://packagist.org/packages/nek-v/yii-esmsc)
 This extension is designed to send sms messages through different services and protocols.
 You can add your providers extending class ```ESMSCProvider```.
 See the examples in the directory ```providers```
@@ -18,6 +19,7 @@ See the examples in the directory ```providers```
 
 ### Requirements
 
+* PHP 5.3+
 * Yii 1.1 or above
 
 
@@ -27,11 +29,7 @@ See the examples in the directory ```providers```
 ```yaml
 ...
 "require": {
-    "php-smpp/php-smpp": "dev-master",
-    "nek-v/yii-esmsc": "dev-master"
-},
-"config": {
-    "vendor-dir": "protected/vendor"
+    "nek-v/yii-esmsc": "1.0.0"
 }
 ...
 ```
@@ -42,30 +40,21 @@ See the examples in the directory ```providers```
 <?php
 ...
 'aliases' => array(
+    // Path to vendor dir
     'vendor'    => realpath(__DIR__ . '/../vendor'),
 ),
 'import'    => array(
     'vendor.nek-v.yii-esmsc.*',
-)
-...
-```
-or so
-```php
-<?php
-...
-'import'    => array(
-    'ext.yii-esmsc.*',
-)
-...
+),
 'components'    => array(
     'sms'   => array(
         'class' => 'vendor.nek-v.yii-esmsc.ESMSC',
         'provides'  => array(
             'dummy' => array(
-                'class' => 'Dummy'
+                'class' => 'DummyProvider'
             ),
             'smpp'  => array(
-                'class'     => 'SMPP',
+                'class'     => 'SMPPProvider',
                 'server'    => 'smpp server',
                 'port'      => 'smpp port',
                 'login'     => 'smpp login',
@@ -75,8 +64,8 @@ or so
         )
     )
 )
+...
 ```
-
 ## Usage
 
 ```php

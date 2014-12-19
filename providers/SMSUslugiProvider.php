@@ -6,7 +6,7 @@
  * @link http://sms-uslugi.ru
  * @version $Id$
  */
-class SMSUslugi extends ESMSCProvider {
+class SMSUslugiProvider extends ESMSCProvider {
 
     /**
      * @var string
