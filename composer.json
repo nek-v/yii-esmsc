@@ -2,6 +2,7 @@
     "name": "nek-v/yii-esmsc",
     "description": "Extension for sending SMS messages",
     "keywords": ["yii", "sms", "smpp", "texting"],
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "nek",
@@ -15,19 +16,5 @@
     "require": {
        "php": ">=5.3.3",
        "php-smpp/php-smpp": "dev-master"
-    },
-    "repositories":[
-        {
-            "type":"package",
-            "package":{
-                "name":"php-smpp/php-smpp",
-                "version":"master",
-                "source":{
-                    "type":"git",
-                    "url":"https://github.com/onlinecity/php-smpp",
-                    "reference":"master"
-                }
-            }
-        }
-    ]
+    }
 }
