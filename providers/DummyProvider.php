@@ -5,7 +5,7 @@
  * @link https://github.com/nek-v/yii-esmsc
  * @version $Id$
  */
-class Dummy extends ESMSCProvider {
+class DummyProvider extends ESMSCProvider {
     
     /**
      * @var string

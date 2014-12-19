@@ -8,8 +8,8 @@
  * @link http://www.kannel.org/
  * @version $Id$
  */
-Yii::import(Yii::getPathOfAlias(Yii::setPathOfAlias('php-smpp', dirname(__FILE__).'/../../php-smpp/php-smpp').'.*'));
-class SMPP extends ESMSCProvider {
+Yii::import(Yii::getPathOfAlias(Yii::setPathOfAlias('php-smpp', dirname(__FILE__).'/../../php-smpp').'.*'));
+class SMPPProvider extends ESMSCProvider {
 
     /**
      * @var string
