@@ -8,7 +8,14 @@
  * @link http://www.kannel.org/
  * @version $Id$
  */
-Yii::import(Yii::getPathOfAlias(Yii::setPathOfAlias('php-smpp', dirname(__FILE__).'/../../php-smpp').'.*'));
+require_once(dirname(__FILE__).'/../../../autoload.php');
+
+use OnlineCity\Transport\SocketTransport;
+use OnlineCity\SMPP\SMPP;
+use OnlineCity\SMPP\SmppClient;
+use OnlineCity\SMPP\SmppAddress;
+use OnlineCity\Encoder\GsmEncoder;
+
 class SMPPProvider extends ESMSCProvider {
 
     /**
